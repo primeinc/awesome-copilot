@@ -45,6 +45,8 @@ You can use these prompts to help the user:
 
 ## Sub-Agents
 - `agents/payload-architect.agent.md`
+- `agents/payload-implementer.agent.md`
+- `agents/payload-reviewer.agent.md`
 
 ## Keywords
 - payloadcms
