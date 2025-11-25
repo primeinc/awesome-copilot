@@ -8,6 +8,10 @@ items:
     kind: agent
   - path: agents/payload-cms-mastery.agent.md
     kind: agent
+  - path: agents/payload-implementer.agent.md
+    kind: agent
+  - path: agents/payload-reviewer.agent.md
+    kind: agent
 
   # Instructions
   - path: instructions/payload-cms-best-practices.instructions.md
