@@ -10,6 +10,8 @@ Comprehensive suite of agents, instructions, and prompts for building scalable C
 | ----- | ---- | ----------- |
 | [Payload Architect](../agents/payload-architect.agent.md) | Agent | An expert in Payload CMS architecture, Next.js integration, and database strategy. |
 | [Payload CMS Mastery](../agents/payload-cms-mastery.agent.md) | Agent | The complete toolkit for architecting, building, and maintaining enterprise-grade Payload CMS applications. |
+| [Payload Implementer](../agents/payload-implementer.agent.md) | Agent | Writes strict, production-ready Payload CMS 3.0 TypeScript config based on architectural plans. |
+| [Payload Reviewer](../agents/payload-reviewer.agent.md) | Agent | Audits Payload CMS 3.0 schemas and access control for security, correctness, and architectural consistency. |
 | [Payload CMS Best Practices](../instructions/payload-cms-best-practices.instructions.md) | Instruction | Core architecture principles and best practices for Payload CMS v3.0+ |
 | [Payload Database Administration](../instructions/payload-database-admin.instructions.md) | Instruction | Guidelines for Payload CMS database management, migrations, and seeding. |
 | [Payload Admin UI Development](../instructions/payload-admin-ui.instructions.md) | Instruction | Guidelines for developing custom components within the Payload CMS Admin Panel. |
@@ -25,4 +27,4 @@ Comprehensive suite of agents, instructions, and prompts for building scalable C
 | [Payload Plugin Configuration Specialist](../prompts/payload-plugin-integrator.prompt.md) | Prompt | Configure official plugins (SEO, Cloud Storage, Auth) or scaffold custom plugins. |
 
 ---
-*This collection includes 15 curated items for **Payload CMS Development**.*
+*This collection includes 17 curated items for **Payload CMS Development**.*
