@@ -1,8 +1,21 @@
 ---
 name: neo4j-docker-client-generator
 description: AI agent that generates simple, high-quality Python Neo4j client libraries from GitHub issues with proper best practices
-tools: ['read', 'edit', 'search', 'shell', 'neo4j-local/neo4j-local-get_neo4j_schema', 'neo4j-local/neo4j-local-read_neo4j_cypher', 'neo4j-local/neo4j-local-write_neo4j_cypher']
+tools: ['read', 'edit', 'search', 'shell', 'neo4j-local/neo4j-local-get_neo4j_schema', 'neo4j-local/neo4j-local-read_neo4j_cypher', 'neo4j-local/neo4j-local-write_neo4j_cypher', 'context7/*', 'microsoft-learn/*', 'deepwiki/*']
 mcp-servers:
+  context7:
+    type: http
+    url: "https://mcp.context7.com/mcp"
+    headers: {"CONTEXT7_API_KEY": "${{ secrets.COPILOT_MCP_CONTEXT7 }}"}
+    tools: ["get-library-docs", "resolve-library-id"]
+  microsoft-learn:
+    type: http
+    url: "https://learn.microsoft.com/api/mcp"
+    tools: ["*"]
+  deepwiki:
+    type: http
+    url: "https://mcp.deepwiki.com/mcp"
+    tools: ["*"]
   neo4j-local:
     type: 'local'
     command: 'docker'
@@ -24,6 +37,11 @@ mcp-servers:
       NEO4J_PASSWORD: '${COPILOT_MCP_NEO4J_PASSWORD}'
       NEO4J_DATABASE: '${COPILOT_MCP_NEO4J_DATABASE}'
     tools: ["*"]
+handoffs:
+  - label: Generate Client
+    agent: agent
+    prompt: Generate the Neo4j Python client library.
+    send: false
 ---
 
 # Neo4j Python Client Generator

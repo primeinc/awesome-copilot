@@ -1,0 +1,44 @@
+id: payload-cms
+name: Payload CMS Development
+description: Comprehensive suite of agents, instructions, and prompts for building scalable Content Management Systems with Payload CMS v3.0+ and Next.js App Router.
+tags: [payloadcms, nextjs, typescript, cms, database, headless-cms]
+items:
+  # Agents
+  - path: agents/payload-architect.agent.md
+    kind: agent
+  - path: agents/payload-cms-mastery.agent.md
+    kind: agent
+
+  # Instructions
+  - path: instructions/payload-cms-best-practices.instructions.md
+    kind: instruction
+  - path: instructions/payload-database-admin.instructions.md
+    kind: instruction
+  - path: instructions/payload-admin-ui.instructions.md
+    kind: instruction
+  - path: instructions/payload-public-api.instructions.md
+    kind: instruction
+  - path: instructions/payload-collections.instructions.md
+    kind: instruction
+  - path: instructions/payload-globals.instructions.md
+    kind: instruction
+  - path: instructions/payload-access-control.instructions.md
+    kind: instruction
+
+  # Prompts
+  - path: prompts/payload-schema-designer.prompt.md
+    kind: prompt
+  - path: prompts/payload-db-admin-toolkit.prompt.md
+    kind: prompt
+  - path: prompts/payload-integration-nextjs.prompt.md
+    kind: prompt
+  - path: prompts/payload-access-control-logic.prompt.md
+    kind: prompt
+  - path: prompts/payload-custom-admin-ui.prompt.md
+    kind: prompt
+  - path: prompts/payload-plugin-integrator.prompt.md
+    kind: prompt
+
+display:
+  ordering: alpha
+  show_badge: true
